@@ -5,81 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
     <!-- UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/db6d43e338.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/db6d43e338.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        .font-ADLaM{
-            font-family: "ADLaM Display", serif;
-        }
+      .font-ADLaM {
+        font-family: "ADLaM Display", serif;
+      }
     </style>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-primary': '#FFF9F4',
-                'btn-primary': '#FFDC26',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bg-primary": "#FFF9F4",
+              "btn-primary": "#FFDC26",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header -->
     <header class="md:container mx-auto">
-        <!-- Navbar -->
-         <nav class="border border-gray-800 md:border-none">
-            <div class="navbar bg-bg-primary">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="font-semibold"><a>Find a pet</a></li>
-                      <li class="font-semibold"><a>Breeds</a></li>
-                      <li class="font-semibold"><a>Contact us</a></li>
-                    </ul>
-                  </div>
-                  <img src="c1-assets/logo-header.png" alt="" class="w-10 mr-2">
-                  <a class="font-semibold text-xl invisible md:visible">Browse<span class="text-yellow-500">4</span>Pets</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="font-semibold"><a>Find a pet</a></li>
-                    <li class="font-semibold"><a>Breeds</a></li>
-                    <li class="font-semibold"><a>Contact us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end space-x-3 invisible md:visible">
-                  <i class="fa-solid fa-bell"></i>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <a class="border border-btn-primary py-1.5 px-7 rounded-md font-semibold">Button</a>
-                  <a class="bg-btn-primary py-1.5 px-7 rounded-md font-semibold">Button</a>
-                </div>
+      <!-- Navbar -->
+      <nav class="border border-gray-800 md:border-none">
+        <div class="navbar bg-bg-primary">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-         </nav>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="font-semibold"><a>Find a pet</a></li>
+                <li class="font-semibold"><a>Breeds</a></li>
+                <li class="font-semibold"><a>Contact us</a></li>
+              </ul>
+            </div>
+            <img src="c1-assets/logo-header.png" alt="" class="w-10 mr-2" />
+            <a class="font-semibold text-xl invisible md:visible"
+              >Browse<span class="text-yellow-500">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-semibold"><a>Find a pet</a></li>
+              <li class="font-semibold"><a>Breeds</a></li>
+              <li class="font-semibold"><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3 invisible md:visible">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a
+              class="border border-btn-primary py-1.5 px-7 rounded-md font-semibold"
+              >Login</a
+            >
+            <a class="bg-btn-primary py-1.5 px-7 rounded-md font-semibold"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div
+      class="min-h-svh bg-contain bg-center bg-no-repeat "
+      style="background-image: url(c1-assets/cat-big.png);">
+      <div class="">
+        <div class="max-w-lg relative text-left">
+          <h1 class="mb-5 text-5xl text-yellow-500 font-bold">Pamper Your Pet, Because They Deserve the Bes</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+          <button class="bg-btn-primary py-1.5 px-7 rounded-md font-semibold">Find a pet</button>
+        </div>
+      </div>
+    </div>
     </header>
     <!-- Main -->
     <main></main>
