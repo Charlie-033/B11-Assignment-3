@@ -46,6 +46,10 @@
               "bg-primary": "#FFF9F4",
               "bg-secondary": "#F9DF8A",
               "btn-primary": "#FFDC26",
+              "linear-1": "#F8CCFB",
+              "linear-2": "#ACD2FD",
+              "linear-3": "#FFF9F4",
+              "linear-4": "#F9DF8A",
             },
           },
         },
@@ -220,7 +224,7 @@
       </section>
       <!-- Trending Pet section -->
       <section
-        class="pt-16 md:pt-32 md:pb-32 md:bg-bg-primary max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40"
+        class="lg:pt-16 md:pt-32 md:pb-32 md:bg-bg-primary max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40"
       >
         <h2 class="text-3xl md:text-4xl font-ADLaM mb-10">
           Trending Pet Products
@@ -364,7 +368,25 @@
         </div>
       </section>
       <!-- Price section -->
-      <section></section>
+      <section class="mt-0 max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40">
+        <h2 class="text-3xl md:text-4xl font-ADLaM mb-10">Everyday Low Price</h2>
+        <!--  -->
+        <div class="flex flex-col md:flex-row gap-5 ">
+          <div class="bg-red-300 relative shadow-md rounded-lg lg:py-32 pl-5 lg:pl-16 w-100% md:w-3/5 h-[450px] lg:space-y-3">
+          <p class="text-lg font-medium invisible lg:visible">Under Price</p>
+          <h4 class="text-3xl font-ADLaM">Pet Grooming Mitt</h4>
+          <h5 class="text-white text-xl font-medium invisible lg:visible">(Easy Hair Removal)</h5>
+          <h2 class="text-4xl lg:text-5xl font-ADLaM text-white lg:text-black">$7.99</h2>
+          <img src="c1-assets/cute-dog-mid.png" alt="" class="absolute w-[80%] lg:max-w-[55%] xl:top-0 right-0 bottom-0">
+          </div>
+          <div class="w-100% md:w-2/5 bg-linear-to-r from-red-300 to-orange-300 relative h-[450px] rounded-lg pl-5 lg:pl-12 pt-7 space-y-3">
+            <h3 class="text-3xl font-ADLaM">T-Shirt for Dogs</h3>
+            <h2 class="text-4xl lg:text-5xl font-ADLaM text-white lg:text-yellow-500">$7.99</h2>
+            <img src="c1-assets/cute-pet-mid.png" alt="" class="absolute w-60% lg:max-w-[70%] right-0 bottom-0">
+          </div>
+          
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer></footer>
