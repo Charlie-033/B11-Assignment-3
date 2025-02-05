@@ -61,7 +61,7 @@
     <header>
       <!-- Navbar -->
       <nav class="border border-gray-800 md:border-none">
-        <div class="navbar bg-bg-primary">
+        <div class="navbar bg-bg-primary lg:px-36">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -224,7 +224,7 @@
       </section>
       <!-- Trending Pet section -->
       <section
-        class="lg:pt-16 md:pt-32 md:pb-32 md:bg-bg-primary max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40"
+        class=" md:pt-32 md:pb-32 md:bg-bg-primary max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40"
       >
         <h2 class="text-3xl md:text-4xl font-ADLaM mb-10">
           Trending Pet Products
@@ -241,7 +241,7 @@
             <button class="bg-white py-1.5 px-7 rounded-md font-medium">
               Find a pet
             </button>
-            <div class="absolute top-14 right-3">
+            <div class="absolute top-14 right-3 translate-x-5">
               <img src="c1-assets/cute-pet-small.png" alt="" class="" />
             </div>
           </div>
@@ -352,9 +352,9 @@
               </div>
             </div>
             <div
-              class="flex items-center gap-5 bg-white border-2 border-gray-200 rounded-lg invisible md:visible"
+              class="md:flex items-center gap-5 bg-white border-2 border-gray-200 rounded-lg hidden"
             >
-              <div class="ml-5 p-4 bg-bg-primary rounded-lg">
+              <div class="ml-5 p-2 bg-bg-primary rounded-lg">
                 <img src="c1-assets/dog-cartoon.png" alt="" />
               </div>
               <div>
@@ -368,41 +368,73 @@
         </div>
       </section>
       <!-- Price section -->
-      <section class="mt-0 max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40">
+      <section class="mt-0 max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40 pb-[350px]">
         <h2 class="text-3xl md:text-4xl font-ADLaM mb-10">Everyday Low Price</h2>
         <!--  -->
         <div class="flex flex-col md:flex-row gap-5 ">
-          <div class="bg-red-300 relative shadow-md rounded-lg lg:py-32 pl-5 lg:pl-16 w-100% md:w-3/5 h-[450px] lg:space-y-3">
+          <div class="bg-red-300 relative shadow-md rounded-lg lg:py-32 pl-5 lg:pl-16 w-100% md:w-3/5 h-[450px] space-y-3">
           <p class="text-lg font-medium invisible lg:visible">Under Price</p>
           <h4 class="text-3xl font-ADLaM">Pet Grooming Mitt</h4>
-          <h5 class="text-white text-xl font-medium invisible lg:visible">(Easy Hair Removal)</h5>
+          <h5 class="text-white text-xl font-medium hidden lg:block">(Easy Hair Removal)</h5>
           <h2 class="text-4xl lg:text-5xl font-ADLaM text-white lg:text-black">$7.99</h2>
-          <img src="c1-assets/cute-dog-mid.png" alt="" class="absolute w-[80%] lg:max-w-[55%] xl:top-0 right-0 bottom-0">
+          <img src="c1-assets/cute-dog-mid.png" alt="" class="absolute max-w-[85%] lg:max-w-[55%] xl:top-0 right-0 bottom-0">
           </div>
           <div class="w-100% md:w-2/5 bg-[#F8CCFB] relative h-[450px] rounded-lg pl-5 lg:pl-12 pt-7 space-y-3">
             <h3 class="text-3xl font-ADLaM">T-Shirt for Dogs</h3>
             <h2 class="text-4xl lg:text-5xl font-ADLaM text-white lg:text-yellow-500">$7.99</h2>
-            <img src="c1-assets/cute-pet-mid.png" alt="" class="absolute w-60% lg:max-w-[70%] right-0 bottom-0">
+            <img src="c1-assets/cute-pet-mid.png" alt="" class="absolute max-w-[300px] lg:max-w-[70%] right-0 bottom-0">
           </div>
         </div>
       </section>
+      
+    </main>
+    <!-- Footer -->
+    <footer class="pt-10 p-5 bg-bg-secondary space-y-7 relative">
       <!-- Subscription section -->
-       <section class="max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40">
-        <div>
-          <div><img src="c1-assets/cute-pet-mid.png" alt=""></div>
-          <div>
-            <h3>Get Pawsome News!</h3>
-            <p>Exclusive training tips, ticks, product deals and more.</p>
-            <input type="text" placeholder="Enter Email">
-            <button>Subscribe</button>
+      <section class="max-w-screen-2xl mx-auto p-5 md:mt-10 md:px-16 lg:px-35 xl:px-40 absolute w-full
+      translate-y-1/2 -translate-x-1/2 translate-x left-1/2 bottom-[100%]">
+        <div class="bg-bg-primary p-8 lg:pl-28 text-center lg:text-left rounded-lg lg:flex justify-start items-center gap-24">
+          <div class="">
+          <img src="c1-assets/cute-pet-mid.png" alt="" class="block mx-auto mb-3 max-sm:w-[80%]">
+          </div>
+          <div class="space-y-5">
+            <h3 class="font-ADLaM text-3xl">Get Pawsome News!</h3>
+            <p class="text-md font-medium">Exclusive training tips, ticks, product deals and more.</p>
+            <p><input class="w-[250px] md:w-[350px] px-2 py-2 rounded-md text-start" type="text" placeholder="Enter Email..."></p>
+            <button class="bg-btn-primary py-1.5 px-7 rounded-md font-medium">Subscribe</button>
           </div>
         </div>
        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class=" bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD]"></div>
-      <div class="bg-linear-to-t from-sky-500 to-indigo-500"></div>
+       <!-- foot -->
+      <div class="lg:flex justify-between lg:pl-36 lg:pr-20  pt-[350px] md:pt-[400px] lg:pt-[300px] pb-[100px] space-y-5">
+        <div>
+          <div class="flex items-center">
+            <div>
+              <img src="c1-assets/logo-footer.png" alt="" class="w-8 mr-2">
+            </div>
+              <div>
+              <a class="font-medium text-xl">Browse<span class="text-yellow-500">4</span>Pets</a>
+            </div>
+          </div>
+          <p class="text-gray-700 text-lg mt-3 lg:w-3/5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+          </div>
+          <div class="lg:-translate-x-48">
+            <ul class="space-y-2">
+              <li class="text-lg font-medium"><a href="">Find a pet</a></li>
+              <li class="text-lg font-medium"><a href="">Breeds</a></li>
+              <li class="text-lg font-medium"><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="lg:translate-y-10">
+            <p class="text-lg">Follow Us</p>
+            <div class="space-x-3 text-xl">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+      </div>
     </footer>
   </body>
 </html>
